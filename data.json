@@ -1,0 +1,537 @@
+[{
+        "artist": "A-Ha",
+        "song_name": "Take on Me",
+        "youtube_link": "https://www.youtube.com/watch?v=djV11Xbc914",
+        "key_of_song": "Gbm",
+        "genre": "Pop",
+        "year_of_release": "1984"
+    },
+    {
+        "artist": "John Lennon",
+        "song_name": "Imagine",
+        "youtube_link": "https://www.youtube.com/watch?v=-b7qaSxuZUg",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "1971"
+    },
+    {
+        "artist": "Judy Garland",
+        "song_name": "Over the Rainbow",
+        "youtube_link": "https://www.youtube.com/watch?v=PSZxmZmBfnU",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "1939"
+    },
+    {
+        "artist": "Everly Brothers",
+        "song_name": "Bye Bye Love",
+        "youtube_link": "https://www.youtube.com/watch?v=fUoN50lkRi4",
+        "key_of_song": "A",
+        "genre": "Pop",
+        "year_of_release": "1957"
+    },
+    {
+        "artist": "Jeff Buckley",
+        "song_name": "Hallelujah",
+        "youtube_link": "https://www.youtube.com/watch?v=y8AWFf7EAc4",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "1994"
+    },
+    {
+        "artist": "Queen",
+        "song_name": "Bohemian Rhapsody",
+        "youtube_link": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+        "key_of_song": "Bb",
+        "genre": "Pop",
+        "year_of_release": "1975"
+    },
+    {
+        "artist": "The Band",
+        "song_name": "The Weight",
+        "youtube_link": "https://www.youtube.com/watch?v=sjCw3-YTffo",
+        "key_of_song": "A",
+        "genre": "Pop",
+        "year_of_release": "1968"
+    },
+    {
+        "artist": "Beach Boys",
+        "song_name": "Good Vibrations",
+        "youtube_link": "https://www.youtube.com/watch?v=9UsUL7D_GOo",
+        "key_of_song": "Dm",
+        "genre": "Pop",
+        "year_of_release": "1966"
+    },
+    {
+        "artist": "Joni Mitchell",
+        "song_name": "Big Yellow Taxi",
+        "youtube_link": "https://www.youtube.com/watch?v=ZgMEPk6fvpg",
+        "key_of_song": "E",
+        "genre": "Pop",
+        "year_of_release": "1970"
+    },
+    {
+        "artist": "Elton John",
+        "song_name": "Your Song",
+        "youtube_link": "https://www.youtube.com/watch?v=z7j1uogI02A",
+        "key_of_song": "Ebm",
+        "genre": "Pop",
+        "year_of_release": "1970"
+    },
+    {
+        "artist": "Bobby Darin",
+        "song_name": "Mack the Knife",
+        "youtube_link": "https://www.youtube.com/watch?v=4Qrjtr_uFac",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "1959"
+    },
+    {
+        "artist": "Bruce Springsteen",
+        "song_name": "Born to Run",
+        "youtube_link": "https://www.youtube.com/watch?v=IxuThNgl3YA",
+        "key_of_song": "F",
+        "genre": "Pop",
+        "year_of_release": "1975"
+    },
+    {
+        "artist": "Janet Jackson",
+        "song_name": "Escapade",
+        "youtube_link": "https://www.youtube.com/watch?v=UFX3gQHIroU",
+        "key_of_song": "Ab",
+        "genre": "Pop",
+        "year_of_release": "1990"
+    },
+    {
+        "artist": "U2",
+        "song_name": "One",
+        "youtube_link": "https://www.youtube.com/watch?v=ftjEcrrf7r0",
+        "key_of_song": "Em",
+        "genre": "Pop",
+        "year_of_release": "1992"
+    },
+    {
+        "artist": "Madonna",
+        "song_name": "Ray of Light",
+        "youtube_link": "https://www.youtube.com/watch?v=a4tD8dy9Reg",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "1998"
+    },
+    {
+        "artist": "Madonna",
+        "song_name": "Like a Prayer",
+        "youtube_link": "https://www.youtube.com/watch?v=79fzeNUqQbQ",
+        "key_of_song": "Dm",
+        "genre": "Pop",
+        "year_of_release": "1989"
+    },
+    {
+        "artist": "No Doubt",
+        "song_name": "Don't Speak",
+        "youtube_link": "https://www.youtube.com/watch?v=TR3Vdo5etCQ",
+        "key_of_song": "Am",
+        "genre": "Pop",
+        "year_of_release": "1995"
+    },
+    {
+        "artist": "ABBA",
+        "song_name": "Dancing Queen",
+        "youtube_link": "https://www.youtube.com/watch?v=xFrGuyw1V8s",
+        "key_of_song": "A",
+        "genre": "Pop",
+        "year_of_release": "1976"
+    },
+    {
+        "artist": "New Order",
+        "song_name": "Blue Monday",
+        "youtube_link": "https://www.youtube.com/watch?v=BV7LKjTV5oI",
+        "key_of_song": "Am",
+        "genre": "Pop",
+        "year_of_release": "1983"
+    },
+    {
+        "artist": "Simon & Garfunkel",
+        "song_name": "Bridge over Troubled Water",
+        "youtube_link": "https://www.youtube.com/watch?v=WrcwRt6J32o",
+        "key_of_song": "Ebm",
+        "genre": "Pop",
+        "year_of_release": "1970"
+    },
+    {
+        "artist": "Celine Dion",
+        "song_name": "My Heart Will Go On",
+        "youtube_link": "https://www.youtube.com/watch?v=WNIPqafd4As",
+        "key_of_song": "Eb",
+        "genre": "Pop",
+        "year_of_release": "1997"
+    },
+    {
+        "artist": "The Beatles",
+        "song_name": "Yesterday",
+        "youtube_link": "https://www.youtube.com/watch?v=2uneYz201p0",
+        "key_of_song": "F",
+        "genre": "Pop",
+        "year_of_release": "1965"
+    },
+    {
+        "artist": "R.E.M.",
+        "song_name": "Losing My Religion",
+        "youtube_link": "https://www.youtube.com/watch?v=xwtdhWltSIg",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "1991"
+    },
+    {
+        "artist": "Christina Aguilera",
+        "song_name": "Beautiful",
+        "youtube_link": "https://www.youtube.com/watch?v=eAfyFTzZDMM",
+        "key_of_song": "Eb",
+        "genre": "Pop",
+        "year_of_release": "2002"
+    },
+    {
+        "artist": "Britney Spears",
+        "song_name": "Toxic",
+        "youtube_link": "https://www.youtube.com/watch?v=LOZuxwVk7TU",
+        "key_of_song": "Dm",
+        "genre": "Pop",
+        "year_of_release": "2004"
+    },
+    {
+        "artist": "Lady Gaga",
+        "song_name": "Bad Romance",
+        "youtube_link": "https://www.youtube.com/watch?v=qrO4YZeyl0I",
+        "key_of_song": "Am",
+        "genre": "Pop",
+        "year_of_release": "2009"
+    },
+    {
+        "artist": "Judy Collins",
+        "song_name": "Send in the Clowns",
+        "youtube_link": "https://www.youtube.com/watch?v=KCE-Bijdvv0",
+        "key_of_song": "Eb",
+        "genre": "Pop",
+        "year_of_release": "1975"
+    },
+    {
+        "artist": "Don McLean",
+        "song_name": "American Pie",
+        "youtube_link": "https://www.youtube.com/watch?v=RciM7P9K3FA",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "1971"
+    },
+    {
+        "artist": "The Association",
+        "song_name": "Cherish",
+        "youtube_link": "https://www.youtube.com/watch?v=bCfKvuh_uq8",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "1966"
+    },
+    {
+        "artist": "The Rolling Stones",
+        "song_name": "(I Can't Get No) Satisfaction",
+        "youtube_link": "https://www.youtube.com/watch?v=byn7ZUjz5DY",
+        "key_of_song": "E",
+        "genre": "Pop",
+        "year_of_release": "1965"
+    },
+    {
+        "artist": "Backstreet Boys",
+        "song_name": "I Want It That Way",
+        "youtube_link": "https://www.youtube.com/watch?v=4fndeDfaWCg",
+        "key_of_song": "F#m",
+        "genre": "Pop",
+        "year_of_release": "1999"
+    },
+    {
+        "artist": "Rod Stewart",
+        "song_name": "Maggie May",
+        "youtube_link": "https://www.youtube.com/watch?v=m2CQ0FvAZuw",
+        "key_of_song": "D",
+        "genre": "Pop",
+        "year_of_release": "1971"
+    },
+    {
+        "artist": "Jimi Hendrix",
+        "song_name": "All Along The Watchtower",
+        "youtube_link": "https://www.youtube.com/watch?v=K38uTI0EHCI",
+        "key_of_song": "Am",
+        "genre": "Pop",
+        "year_of_release": "1968"
+    },
+    {
+        "artist": "Bon Jovi",
+        "song_name": "Livin' on a Prayer",
+        "youtube_link": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+        "key_of_song": "Em",
+        "genre": "Pop",
+        "year_of_release": "1986"
+    },
+    {
+        "artist": "Led Zeppelin",
+        "song_name": "Stairway to Heaven",
+        "youtube_link": "https://www.youtube.com/watch?v=9Q7Vr3yQYWQ",
+        "key_of_song": "Am",
+        "genre": "Pop",
+        "year_of_release": "1971"
+    },
+    {
+        "artist": "Dusty Springfield",
+        "song_name": "Son of a Preacher Man",
+        "youtube_link": "https://www.youtube.com/watch?v=RInuFNw1Lk0",
+        "key_of_song": "E",
+        "genre": "Pop",
+        "year_of_release": "1968"
+    },
+    {
+        "artist": "Righteous Brothers",
+        "song_name": "Unchained Melody",
+        "youtube_link": "https://www.youtube.com/watch?v=t-idDbIfGvw",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "1965"
+    },
+    {
+        "artist": "Carly Simon",
+        "song_name": "You're So Vain",
+        "youtube_link": "https://www.youtube.com/watch?v=mQZmCJUSC6g",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "1972"
+    },
+    {
+        "artist": "Rihanna",
+        "song_name": "Umbrella",
+        "youtube_link": "https://www.youtube.com/watch?v=CvBfHwUxHIk",
+        "key_of_song": "Bm",
+        "genre": "Pop",
+        "year_of_release": "2007"
+    },
+    {
+        "artist": "Black Eyed Peas",
+        "song_name": "I Gotta Feeling",
+        "youtube_link": "https://www.youtube.com/watch?v=uSD4vsh1zDA",
+        "key_of_song": "G",
+        "genre": "Pop",
+        "year_of_release": "2009"
+    },
+    {
+        "artist": "Bob Marley",
+        "song_name": "Three Little Birds",
+        "youtube_link": "https://www.youtube.com/watch?v=PGYAAsHT4QE",
+        "key_of_song": "A",
+        "genre": "Pop",
+        "year_of_release": "1980"
+    },
+    {
+        "artist": "The Beatles",
+        "song_name": "Hey Jude",
+        "youtube_link": "https://www.youtube.com/watch?v=A_MjCqQoLLA",
+        "key_of_song": "F",
+        "genre": "Pop",
+        "year_of_release": "1968"
+    },
+    {
+        "artist": "Gnarls Barkley",
+        "song_name": "Crazy",
+        "youtube_link": "https://www.youtube.com/watch?v=bd2B6SjMh_w",
+        "key_of_song": "Cm",
+        "genre": "Pop",
+        "year_of_release": "2006"
+    },
+    {
+        "artist": "Bob Dylan",
+        "song_name": "Like a Rolling Stone",
+        "youtube_link": "https://www.youtube.com/watch?v=4F0ytNzHDj8",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "1965"
+    },
+    {
+        "artist": "The Doors",
+        "song_name": "Light My Fire",
+        "youtube_link": "https://www.youtube.com/watch?v=AdgUn-0DDFs",
+        "key_of_song": "Am",
+        "genre": "Pop",
+        "year_of_release": "1967"
+    },
+    {
+        "artist": "Sam Cooke",
+        "song_name": "You Send Me",
+        "youtube_link": "https://www.youtube.com/watch?v=Wmtx44fzDGw",
+        "key_of_song": "G",
+        "genre": "Pop",
+        "year_of_release": "1957"
+    },
+    {
+        "artist": "Jackson 5",
+        "song_name": "ABC",
+        "youtube_link": "https://www.youtube.com/watch?v=ho7796-au8U",
+        "key_of_song": "G",
+        "genre": "Pop",
+        "year_of_release": "1970"
+    },
+    {
+        "artist": "David Bowie",
+        "song_name": "Fame",
+        "youtube_link": "https://www.youtube.com/watch?v=lD3etldXtTU",
+        "key_of_song": "Bb",
+        "genre": "Pop",
+        "year_of_release": "1975"
+    },
+    {
+        "artist": "Marvin Gaye",
+        "song_name": "Let's Get It On",
+        "youtube_link": "https://www.youtube.com/watch?v=4Wu_45scHN0",
+        "key_of_song": "G",
+        "genre": "Pop",
+        "year_of_release": "1973"
+    },
+    {
+        "artist": "Britney Spears",
+        "song_name": "...Baby One More Time",
+        "youtube_link": "https://www.youtube.com/watch?v=C-u5WLJ9Yk4",
+        "key_of_song": "Em",
+        "genre": "Pop",
+        "year_of_release": "1998"
+    },
+    {
+        "artist": "Eagles",
+        "song_name": "Hotel California",
+        "youtube_link": "https://www.youtube.com/watch?v=KnOvxB74PBY",
+        "key_of_song": "Bm",
+        "genre": "Rock",
+        "year_of_release": "1977"
+    },
+    {
+        "artist": "Whitney Houston",
+        "song_name": "I Will Always Love You",
+        "youtube_link": "https://www.youtube.com/watch?v=3JWTaaS7LdU",
+        "key_of_song": "D",
+        "genre": "Pop",
+        "year_of_release": "1982"
+    },
+    {
+        "artist": "Johnny Cash",
+        "song_name": "Walk the Line",
+        "youtube_link": "https://www.youtube.com/watch?v=xObSJWIWui0",
+        "key_of_song": "F",
+        "genre": "Pop",
+        "year_of_release": "1956"
+    },
+    {
+        "artist": "Michael Jackson",
+        "song_name": "Billie Jean",
+        "youtube_link": "https://www.youtube.com/watch?v=Zi_XLOBDo_Y",
+        "key_of_song": "F#m",
+        "genre": "Pop",
+        "year_of_release": "1983"
+    },
+    {
+        "artist": "The Beatles",
+        "song_name": "Help",
+        "youtube_link": "https://www.youtube.com/watch?v=CTsB-llTzyc",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "1965"
+    },
+    {
+        "artist": "Kelly Clarkson",
+        "song_name": "Since U Been Gone",
+        "youtube_link": "https://www.youtube.com/watch?v=R7UrFYvl5TE",
+        "key_of_song": "G",
+        "genre": "Pop",
+        "year_of_release": "2004"
+    },
+    {
+        "artist": "Pink Floyd",
+        "song_name": "Another Brick In The Wall (Part Two)",
+        "youtube_link": "https://www.youtube.com/watch?v=YR5ApYxkU-U",
+        "key_of_song": "C",
+        "genre": "Rock",
+        "year_of_release": "1979"
+    },
+    {
+        "artist": "Radiohead",
+        "song_name": "Creep",
+        "youtube_link": "https://www.youtube.com/watch?v=XFkzRNyygfk",
+        "key_of_song": "G",
+        "genre": "Rock",
+        "year_of_release": "1992"
+    },
+    {
+        "artist": "Aretha Franklin",
+        "song_name": "Respect",
+        "youtube_link": "https://www.youtube.com/watch?v=n0POmdK18WU",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "1967"
+    },
+    {
+        "artist": "The Police",
+        "song_name": "Every Breath You Take",
+        "youtube_link": "https://www.youtube.com/watch?v=OMOGaugKpzs",
+        "key_of_song": "A",
+        "genre": "Rock",
+        "year_of_release": "1983"
+    },
+    {
+        "artist": "OutKast",
+        "song_name": "Hey Ya!",
+        "youtube_link": "https://www.youtube.com/watch?v=PWgvGjAhvIw",
+        "key_of_song": "C",
+        "genre": "Pop",
+        "year_of_release": "2003"
+    },
+    {
+        "artist": "Nirvana",
+        "song_name": "Smells Like Teen Spirit",
+        "youtube_link": "https://www.youtube.com/watch?v=hTWKbfoikeg",
+        "key_of_song": "Fm",
+        "genre": "Rock",
+        "year_of_release": "1991"
+    },
+    {
+        "artist": "Amy Winehouse",
+        "song_name": "Rehab",
+        "youtube_link": "https://www.youtube.com/watch?v=KUmZp8pR1uc",
+        "key_of_song": "Eb",
+        "genre": "Pop",
+        "year_of_release": "2007"
+    },
+    {
+        "artist": "Elvis Presley",
+        "song_name": "Heartbreak Hotel",
+        "youtube_link": "https://www.youtube.com/watch?v=W4euyTDhFnk",
+        "key_of_song": "E",
+        "genre": "Pop",
+        "year_of_release": "1956"
+    },
+    {
+        "artist": "Beyonce",
+        "song_name": "Crazy in Love",
+        "youtube_link": "https://www.youtube.com/watch?v=JptwkEhdNfY",
+        "key_of_song": "F",
+        "genre": "Pop",
+        "year_of_release": "2003"
+    },
+    {
+        "artist": "Mariah Carey",
+        "song_name": "Fantasy",
+        "youtube_link": "https://www.youtube.com/watch?v=qq09UkPRdFY",
+        "key_of_song": "Em",
+        "genre": "Pop",
+        "year_of_release": "1995"
+    },
+    {
+        "artist": "Prince",
+        "song_name": "When Doves Cry",
+        "youtube_link": "https://www.youtube.com/watch?v=UG3VcCAlUgE",
+        "key_of_song": "Am",
+        "genre": "Pop",
+        "year_of_release": "1984"
+    }
+]
