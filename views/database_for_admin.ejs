@@ -1,0 +1,162 @@
+<!-- views/database_for_admin.ejs -->
+
+<!DOCTYPE html>
+<html lang="en" ng-app="song_app">
+
+<head>
+    <title>Music Database</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+    <link rel="icon" href="https://vignette.wikia.nocookie.net/animalcrossing/images/e/e8/Crucian_Carp_HHD_Icon.png/revision/latest?cb=20161105194656">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script> -->
+    <script src="js/frontend_app.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!-- Navbar Container -->
+        <div class="container">
+
+            <!-- Navbar Header [contains both toggle button and navbar brand] -->
+            <div class="navbar-header">
+                <!-- Toggle Button [handles opening navbar components on mobile screens]-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#exampleNavComponents" aria-expanded
+                    "false">
+                    <i class="glyphicon glyphicon-align-center"></i>
+                </button>
+
+                <!-- Navbar Brand -->
+                <a href="#" class="navbar-brand">
+                    Search
+                </a>
+            </div>
+
+            <!-- Navbar Collapse [contains navbar components such as navbar menu and forms ] -->
+            <div class="collapse navbar-collapse" id="exampleNavComponents">
+
+                <!-- Navbar Form -->
+                <form action="#" class="navbar-form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Input song information" ng-model="searchSong">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>SONG KEY FINDER</h1>
+        <h4>{{message}}</h4>
+        <h4>Create a new song entry</h4>
+
+        <form ng-controller="all_songs">
+            <input type="text" placeholder="Artist" ng-model="input_artist">
+            <input type="text" placeholder="Song name" ng-model="input_song_name">
+            <input type="text" placeholder="YouTube link" ng-model="input_youtube_link">
+
+            <select>
+                <option value="">--Select Key of Song--</option>
+                <option ng-repeat="key in key_of_song" ng-model="input_key_of_song">{{key}}</option>
+            </select>
+
+            <select>
+                <option value="">--Select Genre--</option>
+                <option ng-repeat="genre in genres" ng-model="input_genre">{{genre}}</option>
+            </select>
+
+            <select>
+                <option value="">--Select Year of Release--</option>
+                <option ng-repeat="year in year_of_release" ng-model="input_year_of_release">{{year}}</option>
+            </select>
+
+            <button ng-click="create()">CREATE</button>
+        </form>
+        <br>
+        <div class="panel panel-default">
+            <table class="table table-bordered table-striped table-hover" ng-controller="all_songs">
+                <thead>
+                    <tr>
+                        <th>
+                            <a href="#" ng-click="sortType = 'artist'; sortReverse = !sortReverse">
+                                Artist
+                                <span ng-show="sortType == 'artist' && !sortReverse" class="fa fa-caret-up"></span>
+                                <span ng-show="sortType == 'artist' && sortReverse" class="fa fa-caret-down"></span>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#" ng-click="sortType = 'song_name'; sortReverse = !sortReverse">
+                                Song name
+                                <span ng-show="sortType == 'song_name' && !sortReverse" class="fa fa-caret-up"></span>
+                                <span ng-show="sortType == 'song_name' && sortReverse" class="fa fa-caret-down"></span>
+                            </a>
+                        </th>
+                        <th>
+                            YouTube link
+                        </th>
+                        <th>
+                            <a href="#" ng-click="sortType = 'key_of_song'; sortReverse = !sortReverse">
+                                Key of song
+                                <span ng-show="sortType == 'key_of_song' && !sortReverse" class="fa fa-caret-up"></span>
+                                <span ng-show="sortType == 'key_of_song' && sortReverse" class="fa fa-caret-down"></span>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#" ng-click="sortType = 'genre'; sortReverse = !sortReverse">
+                                Genre
+                                <span ng-show="sortType == 'genre' && !sortReverse" class="fa fa-caret-up"></span>
+                                <span ng-show="sortType == 'genre' && sortReverse" class="fa fa-caret-down"></span>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#" ng-click="sortType = 'year_of_release'; sortReverse = !sortReverse">
+                                Year of release
+                                <span ng-show="sortType == 'year_of_release' && !sortReverse" class="fa fa-caret-up"></span>
+                                <span ng-show="sortType == 'year_of_release' && sortReverse" class="fa fa-caret-down"></span>
+                            </a>
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="song in songs | orderBy:sortType:sortReverse | filter: searchSong">
+                        <td>
+                            <span>
+                                <i class="fa fa-trash" ng-click="delete(song)"></i>
+                            </span>
+                            <input type="text" ng-model="song.artist">
+                        </td>
+                        <td>
+                            <input type="text" ng-model="song.song_name">
+                        </td>
+                        <td>
+                            <input type="text" ng-model="song.youtube_link">
+                        </td>
+                        <td>
+                            <input type="text" ng-model="song.key_of_song">
+                        </td>
+                        <td>
+                            <input type="text" ng-model="song.genre">
+                        </td>
+                        <td>
+                            <input type="text" ng-model="song.year_of_release">
+                        </td>
+                        <td>
+                            <button ng-click="update(song)" class="btn-warning">update</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

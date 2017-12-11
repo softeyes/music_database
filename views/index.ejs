@@ -1,8 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="song_app">
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
 
 <head>
-    <title>Music Database</title>
+    <title>Index</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,90 +14,35 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <!-- Navbar Container -->
-        <div class="container">
+    <div class="container">
 
-            <!-- Navbar Header [contains both toggle button and navbar brand] -->
-            <div class="navbar-header">
-                <!-- Toggle Button [handles opening navbar components on mobile screens]-->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#exampleNavComponents" aria-expanded
-                    "false">
-                    <i class="glyphicon glyphicon-align-center"></i>
-                </button>
+        <div>
+            <img src="https://vignette.wikia.nocookie.net/logopedia/images/a/a6/Play_music_triangle.svg.png/revision/latest?cb=20160419085127"
+                alt="" class="center-block">
+        </div>
 
-                <!-- Navbar Brand -->
-                <a href="#" class="navbar-brand">
-                    Search
-                </a>
+        <div class="jumbotron text-center">
+            <h1>
+                <span class="fa fa-headphones"></span> Song Key Finder</h1>
+
+            <br>
+
+            <p>Login or Register with:</p>
+            <div class="form-inline">
+                <a href="/login" class="btn btn-default">
+                    <span class="fa fa-user"></span> LOCAL LOGIN</a>
+                <a href="/signup" class="btn btn-default">
+                    <span class="fa fa-user"></span> LOCAL SIGNUP</a>
             </div>
-
-            <!-- Navbar Collapse [contains navbar components such as navbar menu and forms ] -->
-            <div class="collapse navbar-collapse" id="exampleNavComponents">
-
-                <!-- Navbar Form -->
-                <form action="#" class="navbar-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Artist or song name">
-                    </div>
-                    <button type="submit" class="btn btn-danger">Submit</button>
-                </form>
+            <br>
+            <div class="form-inline">
+                <a href="/database_for_users" class="btn btn-primary">
+                    <span class="fa fa-user"></span> PUBLIC ACCESS</a>
+                <a href="/database_for_admin" class="btn btn-danger">
+                    <span class="fa fa-user"></span> ADMIN ACCESS</a>
             </div>
         </div>
-    </nav>
-    <div class="container">
-        <h1>POPULAR SONGS IN MODERN HISTORY</h1>
-        <h3>Create a new entry</h3>
-        <form>
-            <input type="text" placeholder="artist name" ng-model="input_artist">
-            <input type="text" placeholder="song name" ng-model="input_song_name">
-            <input type="text" placeholder="youtube link" ng-model="input_youtube_link">
-            <select ng-controller="all_songs" ng-model="input_key_of_song">
-                <option value="" disable selected ng-repeat="key in key_of_song" >{{key}}</option>
-            </select>
-            <select ng-controller="all_songs" ng-model="input_genre">
-                <option value="" disable selected ng-repeat="genre in genres">{{genre}}</option>
-            </select>
-            <select ng-controller="all_songs" ng-model="input_year_of_release">
-                <option value="" disable selected ng-repeat="year in year_of_release">{{year}}</option>
-            </select>
-            <button ng-click="create()">CREATE</button>
-        </form>
-        <br>
-        <table class="table" ng-controller="all_songs">
-            <thead>
-                <tr>
-                    <th ng-click='sortColumn("sno")' ng-class='sortClass("sno")'>Artist</th>
-                    <th ng-click='sortColumn("sno")' ng-class='sortClass("sno")'>Song name</th>
-                    <th ng-click='sortColumn("sno")' ng-class='sortClass("sno")'>YouTube link</th>
-                    <th ng-click='sortColumn("sno")' ng-class='sortClass("sno")'>Key of song</th>
-                    <th ng-click='sortColumn("sno")' ng-class='sortClass("sno")'>Genre</th>
-                    <th ng-click='sortColumn("sno")' ng-class='sortClass("sno")'>Year of release</th>
-                </tr>
-            </thead>
-            <tbody ng-repeat="song in songs">
-                <tr>
-                    <td>
-                        <a href="{{song.artist}}" target="_blank">{{song.artist}}</a>
-                    </td>
-                    <td>
-                        {{song.song_name}}
-                    </td>
-                    <td>
-                        <a href="{{song.youtube_link}}" target="_blank">View</a>
-                    </td>
-                    <td>
-                        {{song.key_of_song}}
-                    </td>
-                    <td>
-                        {{song.genre}}
-                    </td>
-                    <td>
-                        {{song.year_of_release}}
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+
     </div>
 </body>
 

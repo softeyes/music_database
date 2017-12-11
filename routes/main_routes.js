@@ -2,11 +2,38 @@ var router = require('express').Router();
 var SONGCLASS = require('../mongodb/mongoose_connection');
 module.exports = router;
 
-router.get('/', do_homepage);
+// render pages
 
-function do_homepage(req, res){
+router.get('/', do_homepage);
+router.get('/database_for_admin', do_database_for_admin);
+router.get('/database_for_users', do_database_for_users);
+router.get('/database_for_users', do_database_for_users);
+router.get('/login', do_login);
+router.get('/signup', do_signup);
+
+function do_homepage(req, res) {
     console.log('doing homepage');
     res.render('index');
+}
+
+function do_database_for_admin(req, res) {
+    console.log('doing database for admin');
+    res.render('database_for_admin');
+}
+
+function do_database_for_users(req, res) {
+    console.log('doing database for users');
+    res.render('database_for_users');
+}
+
+function do_login(req, res) {
+    console.log('doing login');
+    res.render('login');
+}
+
+function do_signup(req, res) {
+    console.log('doing signup');
+    res.render('signup');
 }
 
 // api
@@ -19,61 +46,68 @@ router.delete('/api/v6/delete/:_id', do_delete);
 function do_read(req, res) {
     console.log('getting all data');
     SONGCLASS.find()
-        .then(function(results) {
+        .then(function (results) {
             console.log(results);
-            res.json(results);            
+            res.json(results);
         });
 };
 
 function do_create(req, res) {
-    console.log('creating user');
+    console.log('creating song entry');
     console.log(req.body);
 
     var data = {
         artist: req.body.artist,
         song_name: req.body.song_name,
         youtube_link: req.body.youtube_link,
-        key_of_string: req.body.key_of_string,
+        key_of_song: req.body.key_of_song,
         genre: req.body.genre,
         year_of_release: req.body.year_of_release
-        }
+    }
 
     var song = new SONGCLASS(data);
     song.save()
-        .then(function(result){
+        .then(function (result) {
             console.log(result);
-            res.json({message: 'employee saved!'})
+            res.json({
+                message: 'song entry saved!'
+            })
         });
-    }
+}
 
 function do_update(req, res) {
-    console.log('updating user');
+    console.log('updating song entry');
     console.log(req.body)
 
     var update = {
+
         $set: {
-            name: req.body.name,
-            gender: req.body.gender,
-            contact: {
-                email: req.body.email,
-                cell: req.body.cell,
-                home: req.body.home
-            }
+            artist: req.body.artist,
+            song_name: req.body.song_name,
+            youtube_link: req.body.youtube_link,
+            key_of_song: req.body.key_of_song,
+            genre: req.body.genre,
+            year_of_release: req.body.year_of_release
         }
     }
 
     SONGCLASS.findByIdAndUpdate(req.body._id, update)
-    .then(function(result){
-        console.log(result);
-        res.json({message: 'employee updated!'})
-    })
-};
-    function do_delete(req, res) {
-        console.log('deleting user');
-        console.log(results)
-        SONGCLASS.findByIdAndRemove(req.params._id)
-        .then(function(result){
+        .then(function (result) {
             console.log(result);
-            res.json({message: 'employee deleted!'})
+            res.json({
+                message: 'song entry updated!'
+            })
         });
-    }
+};
+
+function do_delete(req, res) {
+    console.log('deleting song entry');
+    console.log(req.params)
+    SONGCLASS.findByIdAndRemove(req.params._id)
+        .then(function (result) {
+            console.log(result);
+            res.json({
+                message: 'song entry deleted!'
+            })
+        });
+}

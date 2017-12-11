@@ -1,24 +1,124 @@
-body {
-    padding-top: 50px;  
-    background: #085078;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            
+img {
+    width: 400px;
+    margin: 0 auto;
 }
 
-h1 {
+.jumbotron h1 {
     font-family: Amatic SC;
-    font-size: 4em;
-    font-weight: bold;
-    text-align: center;
-    color: white;
 }
 
-.container {
-    font-family: Avenir;
-    color: black; 
+.jumbotron {
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background: #30E8BF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FF8235, #30E8BF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FF8235, #30E8BF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+    
+    body {
+        padding-top: 50px;
+        background: #085078;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #85D8CE, #085078);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #85D8CE, #085078);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
 
-table {
-    font-size: 1.4em;
-}
+    h1 {
+        font-family: Amatic SC;
+        font-size: 6em;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+    }
+
+    .container {
+        font-family: Avenir;
+        color: black;
+        /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.4); */
+    }
+
+    thead {
+        background: rgba(255, 183, 183, 0.8);
+        border-bottom: 3px solid black;
+    }
+
+    th {
+        font-weight: 700;
+    }
+
+    td {
+        padding: 15px;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    table tbody {
+        height: 300px;
+    }
+
+    .table-hover tbody tr:hover td {
+        background-color: rgb(130, 190, 194);
+        transition: 0.1s;
+    }
+
+    .table tbody tr td span {
+        background-color: rgb(130, 190, 194);
+        margin-right: 10px;
+        text-align: center;
+        width: 0px;
+        height: 40px;
+        color: white;
+        font-size: 24px;
+        display: inline-block;
+        transition: 0.1s linear;
+        opacity: 0;
+    }
+
+    .table tbody tr:hover td span {
+        width: 30px;
+        opacity: 1.0;
+    }
+
+    .table tbody tr td span:hover {
+        color: red;
+    }
+
+    .table tbody tr {
+        height: 80px;
+    }
+
+    .table tbody tr td {
+        vertical-align: middle;
+    }
+
+    .key {
+        text-transform: none;
+    }
+
+    .fa-headphones {
+        text-align: center;
+    }
+
+    .btn-block {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .table-striped>tbody>tr:nth-child(even) {
+        background-color: rgb(238, 247, 235);
+    }
+
+    .table-striped>tbody>tr:nth-child(odd) {
+        background-color: rgb(214, 250, 250);
+    }
+
+
+
